@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    height: 100vh;
+}
+
+.container {
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+span {
+    font-size: 100px;
+    font-weight: bolder;
+    line-height: 1;
+    /* border: black; */
+    display: inline-block;
+    color: darkblue;
+}
+
+span.active {
+    animation: jump 2s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0,0) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(3) rotate(-180deg) translate(0,120px);
+    }
+}
