@@ -1,0 +1,70 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container-password{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+    text-align: center;
+    width: 320px;
+    background-color: white;
+}
+.header{
+    background-color: blueviolet;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 10px;
+}
+.display{
+    /* width: 100%; */
+    margin-bottom: 5px;
+    position: relative;
+}
+#pass-input{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+#copy{
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    background-color: rgb(32, 243, 32);
+    color: black;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-size: larger;
+    width: 20%;
+    padding: 5px;
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 8px 15px;
+    font-size: large;
+    /* font-weight: bolder; */
+}
+#generate-btn{
+    display: block;
+    width: 100%;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    
+}
