@@ -1,3 +1,4 @@
+/* <!-- email omkarpatil3821@gmail.com --> */
 const lenghtp = document.querySelector('#lenght-input')
 const uppercase = document.querySelector('#uppercase-input')
 const lowercase = document.querySelector('#lowercase-input')
@@ -17,6 +18,7 @@ const uppercaseStr = " ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const lowercaseStr = " abcdefghijklmnopqrstuvwxyz"
 const NumbersStr = " 1234567890"
 const SymbolsStr = " !@#$%^&*()_+~*/"
+let password =""
 
 generate.addEventListener('click', () => {
 let str = " "
@@ -35,7 +37,6 @@ if(Symbols.checked){
 }
 
 console.log(str,"str")
-let password =""
 for (let i = 0; i < lenghtp.value ; i++) {
     console.log(str.length  ,"Str.lenght ")
     let index = Math.floor(Math.random() * str.length)
@@ -47,4 +48,24 @@ for (let i = 0; i < lenghtp.value ; i++) {
 }
 console.log(password)
 passInput.value= password;
-})
+});
+
+copy.addEventListener('click', () => {
+    if (passInput.value === " "){
+        alert("please Generate Password")
+    }
+    else {
+        const newelement = document.createElement('textarea')
+        newelement.value = passInput.value;
+        document.body.appendChild(newelement);
+        newelement.select();
+        document.execCommand("copy");
+        alert("password copied succesfully ")
+        newelement.remove();
+
+        // passInput.select();
+        // document.execCommand('copy');
+        // alert("Password Copied")
+    }
+});
+ 
