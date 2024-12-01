@@ -1,0 +1,49 @@
+/* <!-- email omkarpatil3821@gmail.com --> */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(151, 196, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+.header{
+    background-color: aqua;
+    /* color: white; */
+    padding: 5px;
+    /* border-radius: ; */
+    margin-bottom: 10px;
+}
+label{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+.output{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#output-p{
+    font-size: 2rem;
+}
