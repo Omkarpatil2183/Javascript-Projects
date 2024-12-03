@@ -4,7 +4,7 @@ const output = document.querySelector(".output");
 
 button.addEventListener("click", function() {
     if (textarea.value === "") {
-        // alert("Please Enter Your Text");
+        // alert("Please Enter Your Text"); 
         output.innerHTML = " Please Enter Your Text";
     }
     else{
@@ -21,3 +21,4 @@ button.addEventListener("click", function() {
         output.innerHTML = ` Total Vowels present in your text = ${count}`;
     }
 })
+// GMAIL : omkarpatil3821@gmail.com
